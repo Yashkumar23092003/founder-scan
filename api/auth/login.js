@@ -4,7 +4,7 @@ import { getUsers } from '../utils/db.js';
 
 const JWT_SECRET = process.env.JWT_SECRET || 'founder_evaluation_secret_key';
 const JWT_EXPIRE = process.env.JWT_EXPIRE || '30d';
-
+// //
 export default async function handler(req, res) {
   // Only allow POST requests
   if (req.method !== 'POST') {
